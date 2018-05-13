@@ -591,12 +591,12 @@ namespace Obloq {
 
     /**
      * Publish IoT message
-     * @param message to message
+     * @param msg message
      */
     //% blockId=Obloq_publishIotMessage
-    //% block="publish iot message | message %message"
-    export function Obloq_publishIotMessage(message: string): void {
-        obloqWriteString(`|4|2|3|${message}|`);
+    //% block="publish iot message | %msg"
+    export function Obloq_publishIotMessage(msg: string): void {
+        obloqWriteString(`|4|2|3|${msg}|`);
     }
 
     function Obloq_connectWifi(): number {
